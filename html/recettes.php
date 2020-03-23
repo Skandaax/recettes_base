@@ -1,5 +1,6 @@
 <?php
 
+
 $recetes_test = array(
     'titre' => 'entrée 1',
     'image' => '../img/entree1.jpg',
@@ -24,12 +25,13 @@ var_dump($recetes_test);
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<
+
 <body>
     <header>
         
     </header>
 
+        
 
     </body>
 
