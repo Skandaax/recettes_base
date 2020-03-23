@@ -1,17 +1,11 @@
 <?php
 
-$page = "entree";
-$page2 = "plats";
-$page3 = "desserts";
 
 var_dump($_GET);
 
 require "html/menu.php";
 
 ?>
-
-
-
  
 <!DOCTYPE html>
 <html lang="fr">
@@ -24,7 +18,6 @@ require "html/menu.php";
     
     <body>
         <header>
-            <?php require "html/menu.php" ?>
         </header>
         
         <article>
