@@ -41,15 +41,21 @@ var_dump($recetes_test);
     <h1><?php echo $recetes_test['titre']?></h1>
     <div><?php ?></div>
     <div>
+    <table>
         <tr>
-            <td><?php echo $recetes_test['titre1']?></td>
-            <td><?php echo $recetes_test['Temps de préparation']?></td>
-        </tr>
-        <tr>
-            <td><?php echo $recetes_test['titre1']?></td>
-            <td><?php echo $recetes_test['Temps de préparation']?></td>
+            <th><?php echo $recetes_test['titre1']?></th>
+            <th><?php echo $recetes_test['titre2']?></th>
+            <th><?php echo $recetes_test['Titre3']?></th>
+            <th><?php echo $recetes_test['titre4']?></th>
+            </tr>
         </tr> 
-
+        <tr>
+            <td><?php echo $recetes_test['Temps de préparation']?></td>
+            <td><?php echo $recetes_test['personnes']?></td>
+            <td><?php echo $recetes_test['Difficulté']?></td>
+            <td><?php echo $recetes_test['Coût']?></td>
+        </tr>
+    </table>
     </div>
 
 </body>
