@@ -1,8 +1,5 @@
 <?php
 
-
-var_dump($_GET);
-
 $page = (isset($_GET["page"]))? $_GET{"page"} : "home";// entree
 
 switch ($page){
@@ -22,9 +19,6 @@ switch ($page){
 }
 
 
-$recetes_test
-
-
 ?>
  
 <!DOCTYPE html>
@@ -42,6 +36,7 @@ $recetes_test
         </header>
         <?php require "html/home.php" ?>
         <?php require "html/recettes.php"?>
+
 
     </body>
 
