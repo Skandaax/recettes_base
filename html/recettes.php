@@ -14,6 +14,7 @@ $recetes_test = array(
 
 var_dump($recetes_test);
 
+
 ?>
 
 
@@ -30,9 +31,9 @@ var_dump($recetes_test);
     <header>
         
     </header>
-
-        
-
-    </body>
+<body>
+    <h1><?php echo $recetes_test['titre']?></h1>
+    <div></div>
+</body>
 
 </html>
