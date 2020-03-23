@@ -4,7 +4,7 @@ include
     <nav class="menu">
         <ul>
             <li><a href ="index.php">Page d'accueil</a></li>
-            <li><a href ="recettes/entree.html">Les entrées</a>
+            <li><a href ="index?page=entree">Les entrées</a>
                 <ul class="sous-menu">
                     <li><a href ="index.php?page=entree1">Entrée 1</a></li>
                     <li><a href ="recettes/entrees/entree2.html">Entrée 2</a></li>
