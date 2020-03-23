@@ -2,7 +2,9 @@
 
 $page = "entree1";
 
+var_dump($page);
+
  
-require "menu.html";
+require "html/menu.php";
 
 ?>
