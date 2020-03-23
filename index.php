@@ -3,27 +3,31 @@
 
 var_dump($_GET);
 
-$page = (isset($_GET["page"]))? $_GET{"page"} : "entree";// entree
+$page = (isset($_GET["page"]))? $_GET{"page"} : "home";// entree
 
 switch ($page){
     case "home":
-        echo "Vous avez demandé la page d'accueil !";
+        $include = "recettes/home.html";
         break;
     case "entree":
-        echo "Page entree est ouverte";
+        $include = "recettes/entree.html";
         break;
     case "plat":
-        echo "Page plat est ouverte";
+        $include = "recettes/plat.html";
         break;
     case "dessert":
-        echo "page dessert est ouverte";
+        $include ="recettes/dessert.html";
         break;
-    default : echo "la page d'accueil s'ouvre !";
+    default : $include ="recettes/home.html";
 }
 
 
+$recetes_test = array (
+    'Titre' => recipe-head
+    'Description' => 
+    'image' => 
+)
 
-require "html/menu.php";
 
 
 ?>
@@ -39,9 +43,10 @@ require "html/menu.php";
 
     <body>
         <header>
+        <?php require "html/menu.php" ?>
         </header>
         
-        <?php require "html/accueil.php" ?>
+        <?php require "html/recettes.php" ?>
 
     </body>
 
