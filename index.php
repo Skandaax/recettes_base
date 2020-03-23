@@ -7,7 +7,7 @@ $page = (isset($_GET["page"]))? $_GET{"page"} : "home";// entree
 
 switch ($page){
     case "home":
-        $include = "recettes/home.html";
+        $include = "html/home.php";
         break;
     case "entree":
         $include = "recettes/entree.html";
@@ -22,12 +22,7 @@ switch ($page){
 }
 
 
-$recetes_test = array (
-    'Titre' => recipe-head
-    'Description' => 
-    'image' => 
-)
-
+$recetes_test
 
 
 ?>
@@ -45,8 +40,8 @@ $recetes_test = array (
         <header>
         <?php require "html/menu.php" ?>
         </header>
-        
-        <?php require "html/recettes.php" ?>
+        <?php require "html/home.php" ?>
+        <?php require "html/recettes.php"?>
 
     </body>
 
