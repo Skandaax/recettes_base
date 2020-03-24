@@ -10,7 +10,7 @@ $recetes_test = array(
     'personnes' => '8',
     'Titre3' => 'Difficulté',
     'Difficulté' => '1/4',
-    'Titre4' => 'Coût',
+    'titre4' => 'Coût',
     'Coût' => '1/4',
     'titre5' => 'Ingrédients',
     'Ingrédients' => '1 paquet depâtes de lasagnes///3 oignons jaunes///3 gousses d ail//1 branche de celerie///1carotte',
@@ -30,7 +30,7 @@ var_dump($recetes_test);
 <head>
     <title>Mon livre de recettes</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css\style.css">
 </head>
 
 <body>
@@ -41,21 +41,40 @@ var_dump($recetes_test);
     <h1><?php echo $recetes_test['titre']?></h1>
     <div><?php ?></div>
     <div>
-    <table>
-        <tr>
-            <th><?php echo $recetes_test['titre1']?></th>
-            <th><?php echo $recetes_test['titre2']?></th>
-            <th><?php echo $recetes_test['Titre3']?></th>
-            <th><?php echo $recetes_test['titre4']?></th>
+        <table>
+            <tr>
+                <th><?php echo $recetes_test['titre1']?></th>
+                <th><?php echo $recetes_test['titre2']?></th>
+                <th><?php echo $recetes_test['Titre3']?></th>
+                <th><?php echo $recetes_test['titre4']?></th>
             </tr>
-        </tr> 
-        <tr>
-            <td><?php echo $recetes_test['Temps de préparation']?></td>
-            <td><?php echo $recetes_test['personnes']?></td>
-            <td><?php echo $recetes_test['Difficulté']?></td>
-            <td><?php echo $recetes_test['Coût']?></td>
-        </tr>
-    </table>
+            <tr>
+                <td><?php echo $recetes_test['Temps de préparation']?></td>
+                <td><?php echo $recetes_test['personnes']?></td>
+                <td><?php echo $recetes_test['Difficulté']?></td>
+                <td><?php echo $recetes_test['Coût']?></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th><?php echo $recetes_test['titre5']?></th>
+            </tr>
+            <tr>
+                <th><?php echo $recetes_test['Etapes']?></th>
+            </tr> 
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th><?php echo $recetes_test['titre6']?></th>
+            </tr>
+            <tr>
+                <th><?php echo $recetes_test['Ingrédients']?></th>
+            </tr> 
+        </table>
     </div>
 
 </body>
