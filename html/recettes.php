@@ -21,6 +21,7 @@ $recetes_test = array(
 var_dump($recetes_test);
 
 
+include("menu.php");
 ?>
 
 
@@ -30,7 +31,7 @@ var_dump($recetes_test);
 <head>
     <title>Mon livre de recettes</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <link rel="stylesheet" type="text/css" href="../css\style.css">
 </head>
 
 <body>
