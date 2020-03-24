@@ -19,8 +19,6 @@ $recetes_test = array(
 );
 
 
-
-
 var_dump($recetes_test);
 
 require "menu.php";
