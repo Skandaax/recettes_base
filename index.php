@@ -20,6 +20,7 @@ switch ($page){
 }
 
 var_dump($_GET);
+
 ?>
  
 <!DOCTYPE html>

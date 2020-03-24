@@ -20,7 +20,7 @@ $recetes_test = array(
 
 /**********3 recettes***********/
 // Recette entrée 2 //
-$liste = array(
+$entrée2 = array(
     'titre' => 'entrée 2',
     'image' => 'img\entree2.jpg',
     'titre1' => 'Temps de préparation',
@@ -38,7 +38,7 @@ $liste = array(
 );
 
 // Recette plats 1 //
-$liste = array(
+$plat1 = array(
     'titre' => 'plat 1',
     'image' => 'img\plat1.jpg',
     'titre1' => 'Temps de préparation',
@@ -56,7 +56,7 @@ $liste = array(
 );
 
 // Recette dessert 1 //
-$liste = array(
+$dessert1 = array(
     'titre' => 'entrée 2',
     'image' => 'img\dessert1.jpg',
     'titre1' => 'Temps de préparation',
@@ -73,31 +73,24 @@ $liste = array(
     'Etapes' => 'Faire revenir gousses hachées d ail et les oignons émincés dans un peu d huile d olive.///Ajouter la carrotte et la branche de céleri hachée puis la viande et faire revenir le tout.///Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu a évaporation.'
 );
 
+var_dump($recetes_test);
 
+$ingredients = sizeof($liste);
 
-
-//Déclaration des variables explode
-$ing = sizeof($liste);
-
-$titre = "";
-$image = "";
-$temp = "" ;
-$personnes = "";
-$difficulte = "";
-$cout = "";
-$ingredient = "";
-$etape = "";
-
-for($i; $i < $size; $i++){
-    $titre = $ing[$i]['titre'];
-    $image = $ing[$i]['image'];
-    $temp = $ing[$i]['temps de preparation'];
-    $personnes = [$i]['personnes'];
-    $difficulte = [$i]['difficulte'];
-    $cout = [$i] = ['cout'];
-    $ingredient = [$i]['ingredient'];
-    $etape = [$i]["etape"];
+for($i = 0; $i < $liste; $i++){
+    $titre = $liste["titre"];
+    $image = $liste["image"];
+    $temp = $liste["temperature"];
+    $personne = $liste["personne"];
+    $difficulte = $liste["difficulte"];
+    $cout = $liste["cout"];
+    $ingredients = $liste["ingredients"];
+    $etapes = $liste["etapes"];
 }
+
+
+$liste = explode("///", $ingredients);
+$liste = explode("///", $etapes);
 
 
 include "menu.php"
