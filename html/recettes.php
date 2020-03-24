@@ -3,6 +3,61 @@
 // Recette test //
 $recetes_test = array(
     'titre' => 'entrée 1',
+    'image' => 'img\entree1.jpg',
+    'titre1' => 'Temps de préparation',
+    'Temps de préparation' => '15sec',
+    'titre2' => 'Personnes',
+    'personnes' => '8',
+    'Titre3' => 'Difficulté',
+    'Difficulté' => '1/4',
+    'titre4' => 'Coût',
+    'Coût' => '1/4',
+    'titre5' => 'Ingrédients',
+    'Ingrédients' => '1 paquet depâtes de lasagnes///3 oignons jaunes///3 gousses d ail///1 branche de celerie///1carotte',
+    'titre6' => 'Etapes',
+    'Etapes' => 'Faire revenir gousses hachées d ail et les oignons émincés dans un peu d huile d olive.///Ajouter la carrotte et la branche de céleri hachée puis la viande et faire revenir le tout.///Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu a évaporation.'
+);
+
+/**********3 recettes***********/
+// Recette entrée 2 //
+$liste = array(
+    'titre' => 'entrée 2',
+    'image' => 'img\entree2.jpg',
+    'titre1' => 'Temps de préparation',
+    'Temps de préparation' => '15sec',
+    'titre2' => 'Personnes',
+    'personnes' => '8',
+    'Titre3' => 'Difficulté',
+    'Difficulté' => '1/4',
+    'titre4' => 'Coût',
+    'Coût' => '1/4',
+    'titre5' => 'Ingrédients',
+    'Ingrédients' => '1 paquet depâtes de lasagnes///3 oignons jaunes///3 gousses d ail///1 branche de celerie///1carotte',
+    'titre6' => 'Etapes',
+    'Etapes' => 'Faire revenir gousses hachées d ail et les oignons émincés dans un peu d huile d olive.///Ajouter la carrotte et la branche de céleri hachée puis la viande et faire revenir le tout.///Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu a évaporation.'
+);
+
+// Recette plats 1 //
+$liste = array(
+    'titre' => 'plat 1',
+    'image' => 'img\plat1.jpg',
+    'titre1' => 'Temps de préparation',
+    'Temps de préparation' => '15sec',
+    'titre2' => 'Personnes',
+    'personnes' => '8',
+    'Titre3' => 'Difficulté',
+    'Difficulté' => '1/4',
+    'titre4' => 'Coût',
+    'Coût' => '1/4',
+    'titre5' => 'Ingrédients',
+    'Ingrédients' => '1 paquet depâtes de lasagnes///3 oignons jaunes///3 gousses d ail///1 branche de celerie///1carotte',
+    'titre6' => 'Etapes',
+    'Etapes' => 'Faire revenir gousses hachées d ail et les oignons émincés dans un peu d huile d olive.///Ajouter la carrotte et la branche de céleri hachée puis la viande et faire revenir le tout.///Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu a évaporation.'
+);
+
+// Recette dessert 1 //
+$liste = array(
+    'titre' => 'entrée 2',
     'image' => 'img\dessert1.jpg',
     'titre1' => 'Temps de préparation',
     'Temps de préparation' => '15sec',
@@ -18,13 +73,15 @@ $recetes_test = array(
     'Etapes' => 'Faire revenir gousses hachées d ail et les oignons émincés dans un peu d huile d olive.///Ajouter la carrotte et la branche de céleri hachée puis la viande et faire revenir le tout.///Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu a évaporation.'
 );
 
+//Déclaration des variables explode
+$ing = sizeof($liste);
 
-var_dump($recetes_test);
 
 
+
+include "menu.php"
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -40,11 +97,10 @@ var_dump($recetes_test);
         
     </header>
 <body>
-    <img src="<?php echo $recetes_test['image'] ?>" alt="">
 
     <h1 class="recipe-head"><?php echo $recetes_test['titre']?></h1>
         
-        <div class="illustration img-block"><a href="entree1.html"><img src="../../img/entree1.jpg" alt="Image entrée 1">
+        <div class="illustration img-block"><a href="entree1.html"><img src="<?php echo $recetes_test['image']?>" alt="Image entrée 1">
         </a></div>
 
         <section class="row bg-light">

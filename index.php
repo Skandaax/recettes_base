@@ -31,14 +31,14 @@ switch ($page){
          <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 
-    <body>
-        <header>
+    
+    <header>
         <?php require "html/menu.php" ?>
-        </header>
+    </header>
+    
+     <body>   
         <?php require "html/home.php" ?>
         <?php require "html/recettes.php"?>
-
-
     </body>
 
 </html>
