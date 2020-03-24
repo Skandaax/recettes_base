@@ -73,10 +73,31 @@ $liste = array(
     'Etapes' => 'Faire revenir gousses hachées d ail et les oignons émincés dans un peu d huile d olive.///Ajouter la carrotte et la branche de céleri hachée puis la viande et faire revenir le tout.///Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu a évaporation.'
 );
 
+
+
+
 //Déclaration des variables explode
 $ing = sizeof($liste);
 
+$titre = "";
+$image = "";
+$temp = "" ;
+$personnes = "";
+$difficulte = "";
+$cout = "";
+$ingredient = "";
+$etape = "";
 
+for($i; $i < $size; $i++){
+    $titre = $ing[$i]['titre'];
+    $image = $ing[$i]['image'];
+    $temp = $ing[$i]['temps de preparation'];
+    $personnes = [$i]['personnes'];
+    $difficulte = [$i]['difficulte'];
+    $cout = [$i] = ['cout'];
+    $ingredient = [$i]['ingredient'];
+    $etape = [$i]["etape"];
+}
 
 
 include "menu.php"

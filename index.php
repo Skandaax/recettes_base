@@ -19,7 +19,7 @@ switch ($page){
     default : $include ="recettes/home.html";
 }
 
-
+var_dump($_GET);
 ?>
  
 <!DOCTYPE html>
@@ -35,7 +35,7 @@ switch ($page){
     <header>
         <?php require "html/menu.php" ?>
     </header>
-    
+
      <body>   
         <?php require "html/home.php" ?>
         <?php require "html/recettes.php"?>
