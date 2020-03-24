@@ -4,93 +4,57 @@
 $recetes_test = array(
     'titre' => 'entrée 1',
     'image' => 'img\entree1.jpg',
-    'titre1' => 'Temps de préparation',
     'Temps de préparation' => '15sec',
-    'titre2' => 'Personnes',
     'personnes' => '8',
-    'Titre3' => 'Difficulté',
     'Difficulté' => '1/4',
-    'titre4' => 'Coût',
     'Coût' => '1/4',
-    'titre5' => 'Ingrédients',
     'Ingrédients' => '1 paquet depâtes de lasagnes///3 oignons jaunes///3 gousses d ail///1 branche de celerie///1carotte',
-    'titre6' => 'Etapes',
     'Etapes' => 'Faire revenir gousses hachées d ail et les oignons émincés dans un peu d huile d olive.///Ajouter la carrotte et la branche de céleri hachée puis la viande et faire revenir le tout.///Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu a évaporation.'
 );
 
 /**********3 recettes***********/
 // Recette entrée 2 //
-$entrée2 = array(
+$recette1 = array(
     'titre' => 'entrée 2',
     'image' => 'img\entree2.jpg',
-    'titre1' => 'Temps de préparation',
     'Temps de préparation' => '15sec',
-    'titre2' => 'Personnes',
     'personnes' => '8',
-    'Titre3' => 'Difficulté',
     'Difficulté' => '1/4',
-    'titre4' => 'Coût',
     'Coût' => '1/4',
-    'titre5' => 'Ingrédients',
     'Ingrédients' => '1 paquet depâtes de lasagnes///3 oignons jaunes///3 gousses d ail///1 branche de celerie///1carotte',
-    'titre6' => 'Etapes',
     'Etapes' => 'Faire revenir gousses hachées d ail et les oignons émincés dans un peu d huile d olive.///Ajouter la carrotte et la branche de céleri hachée puis la viande et faire revenir le tout.///Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu a évaporation.'
 );
 
 // Recette plats 1 //
-$plat1 = array(
+$recette2 = array(
     'titre' => 'plat 1',
     'image' => 'img\plat1.jpg',
-    'titre1' => 'Temps de préparation',
     'Temps de préparation' => '15sec',
-    'titre2' => 'Personnes',
     'personnes' => '8',
-    'Titre3' => 'Difficulté',
     'Difficulté' => '1/4',
-    'titre4' => 'Coût',
     'Coût' => '1/4',
-    'titre5' => 'Ingrédients',
     'Ingrédients' => '1 paquet depâtes de lasagnes///3 oignons jaunes///3 gousses d ail///1 branche de celerie///1carotte',
-    'titre6' => 'Etapes',
     'Etapes' => 'Faire revenir gousses hachées d ail et les oignons émincés dans un peu d huile d olive.///Ajouter la carrotte et la branche de céleri hachée puis la viande et faire revenir le tout.///Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu a évaporation.'
 );
 
 // Recette dessert 1 //
-$dessert1 = array(
+$recette3 = array(
     'titre' => 'entrée 2',
     'image' => 'img\dessert1.jpg',
-    'titre1' => 'Temps de préparation',
     'Temps de préparation' => '15sec',
-    'titre2' => 'Personnes',
     'personnes' => '8',
-    'Titre3' => 'Difficulté',
     'Difficulté' => '1/4',
-    'titre4' => 'Coût',
     'Coût' => '1/4',
-    'titre5' => 'Ingrédients',
     'Ingrédients' => '1 paquet depâtes de lasagnes///3 oignons jaunes///3 gousses d ail///1 branche de celerie///1carotte',
-    'titre6' => 'Etapes',
     'Etapes' => 'Faire revenir gousses hachées d ail et les oignons émincés dans un peu d huile d olive.///Ajouter la carrotte et la branche de céleri hachée puis la viande et faire revenir le tout.///Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu a évaporation.'
 );
 
-var_dump($recetes_test);
-
-$ingredients = sizeof($liste);
-
-for($i = 0; $i < $liste; $i++){
-    $titre = $liste["titre"];
-    $image = $liste["image"];
-    $temp = $liste["temperature"];
-    $personne = $liste["personne"];
-    $difficulte = $liste["difficulte"];
-    $cout = $liste["cout"];
-    $ingredients = $liste["ingredients"];
-    $etapes = $liste["etapes"];
-}
+$cat_test = [
+    "nom" => "Les entrées",
+    "recettes" => [$recette1, $recette2, $recette3]
+];
 
 
-$liste = explode("///", $ingredients);
-$liste = explode("///", $etapes);
 
 
 include "menu.php"
@@ -121,10 +85,10 @@ include "menu.php"
             <div class="col-6">
                 <table>
                 <tr>
-                <th><?php echo $recetes_test['titre1']?></th>
-                <th><?php echo $recetes_test['titre2']?></th>
-                <th><?php echo $recetes_test['Titre3']?></th>
-                <th><?php echo $recetes_test['titre4']?></th>
+                <th>Temps de préparation</th>
+                <th>Personnes</th>
+                <th>Difficulté</th>
+                <th>Coût</th>
             </tr>
             <tr>
                 <td><?php echo $recetes_test['Temps de préparation']?></td>
@@ -133,14 +97,14 @@ include "menu.php"
                 <td><?php echo $recetes_test['Coût']?></td>
                 </table>
 
-                <h2><?php echo $recetes_test['titre5']?></h2>
+                <h2>Ingrédients</h2>
                 <ul>
                     <li><?php echo $recetes_test['Ingrédients']?></li>
                 </ul>
             </div>
 
             <div class="col-6">
-                <h2><?php echo $recetes_test['titre6']?></h2>
+                <h2>Etapes</h2>
                 <ol>
                     <li><?php echo $recetes_test['Etapes']?></li>
                 </ol>
