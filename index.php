@@ -1,6 +1,7 @@
 <?php
 
-$page = (isset($_GET["page"]))? $_GET{"page"} : "home";// entree
+// Rooter
+$page = (isset($_GET["page"]))? $_GET{"page"} : "home";// home
 
 switch ($page){
     case "home":

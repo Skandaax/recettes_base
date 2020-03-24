@@ -18,10 +18,13 @@ $recetes_test = array(
     'Etapes' => 'Faire revenir gousses hachées d ail et les oignons émincés dans un peu d huile d olive.///Ajouter la carrotte et la branche de céleri hachée puis la viande et faire revenir le tout.///Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu a évaporation.'
 );
 
+
+
+
 var_dump($recetes_test);
 
+require "menu.php";
 
-include("menu.php");
 ?>
 
 
