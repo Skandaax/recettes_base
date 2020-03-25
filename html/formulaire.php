@@ -2,14 +2,16 @@
 
 var_dump($_POST);
 
-$nom = $_POST['nom'];
-$mail = $_POST['email'];
-$note = $_POST['note'];
-$case = $_POST['case'];
-$comment = $_POST['comment'];
+$verif = isset($_POST["chk"])? "a" : "n'a pas";
 
-$choix = array(J/aine, je/n/aime/pas);
-for($i = 0; $i < sizeof($choix); $i++)
+//if (isset( $_POST['envoie'])) {
+
+    //if (isset( $_POST['value_1'])) echo $_POST['value_1'].'<br />';
+    //if (isset( $_POST['value_2'])) echo $_POST['value_2'].'<br />';
+
+    // Contenu de la global P_POST
+    //print_r($_POST);
+    // }
 
 
 
@@ -31,16 +33,11 @@ for($i = 0; $i < sizeof($choix); $i++)
     </header>
 <body>
 
-<p>
-    <h1>Votre Formulaire à bien était envoyé !</h1>
-</P>
-
-    <?php $name ?>
-    <?php $mail ?>
-    <?php $note ?>
-    <?php $choix ?>
-    <?php $check ?>
-    <?php $comment ?>
+<section class="fig-menu bg-light">
+    <p>[<strong><?= $_POST['note'] ?></strong>] <?= $_POST['nom'] ?> (<?= $_POST['email'] ?>) vous a laissé le commentaire suivant :</p>
+    <p>note : <?php $_POST['note'] ?> / 5</p>
+    <p>(L'utilisateur <?php $verif ?> accepté les conditions génétales)</p>
+</section>
 
 </body>
 
