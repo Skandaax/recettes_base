@@ -54,6 +54,11 @@ $cat_test = [
     "recettes" => [$recette1, $recette2, $recette3]
 ];
 
+var_dump($recetes_test);
+
+
+
+
 
 
 
@@ -113,26 +118,46 @@ include "menu.php"
         <hr>
         <section>
             <h2>Commentaires</h2>
-            <form action="../../index.html" method="post">
+            <form action="html/formulaire.php" method="post">
                 <p>
                     <label for="nom">Votre nom</label>
                     <input type="text" id="nom" name="nom" placeholder="Votre nom">
+
+                    <label for="mail">Votre mail</label>
+                    <input type="text" id="mail" name="email" placeholder="Votre e:mail">
                 </p>
-                <p>Note /5 : 
+                <p>
+                    <select name="choix" size="4">
+                        <OPTION>Lundi
+                        <OPTION>Mardi
+                        <OPTION>Mercredi
+                        <OPTION>Jeudi
+                        <OPTION>Vendredi
+                        <OPTION>Samedi
+                </p>
+                <p>Note /5 : nom
                     <label for="rad0">0</label>
-                    <input type="radio" id="rad0" name="nom" value="0">
+                    <input type="radio" id="rad0" name="note" value="0">
                     <label for="rad1">1</label>
-                    <input type="radio" id="rad1" name="nom" value="1">
+                    <input type="radio" id="rad1" name="note" value="1">
                     <label for="rad2">2</label>
-                    <input type="radio" id="rad2" name="nom" value="2">
+                    <input type="radio" id="rad2" name="note" value="2">
                     <label for="rad3">3</label>
-                    <input type="radio" id="rad3" name="nom" value="3">
+                    <input type="radio" id="rad3" name="note" value="3">
                     <label for="rad4">4</label>
-                    <input type="radio" id="rad4" name="nom" value="4">
+                    <input type="radio" id="rad4" name="note" value="4">
                     <label for="rad5">5</label>
-                    <input type="radio" id="rad5" name="nom" value="5">
+                    <input type="radio" id="rad5" name="note" value="5">
                 </p>
+                </p>
+                    <label for="rad0">J'aime</label>
+                    <input type="checkbox" name="case" value="1">
+                    <label for="rad0">Je n'aime pas</label>
+                    <input type="checkbox" name="case" value="2">
+
+                <p>
                 <p> 
+                
                     <label for="comment">Laissez-nous un commentaire</label><br>
                     <textarea id="comment" rows="5" cols="40"></textarea>
                 </p>
