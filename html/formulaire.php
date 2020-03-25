@@ -34,7 +34,8 @@ $verif = isset($_POST["chk"])? "a" : "n'a pas";
 <body>
 
 <section class="fig-menu bg-light">
-    <p>[<strong><?= $_POST['note'] ?></strong>] <?= $_POST['nom'] ?> (<?= $_POST['email'] ?>) vous a laissé le commentaire suivant :</p>
+    <p>[<strong><?= $_POST['case'] ?></strong>] <?= $_POST['nom'] ?> (<?= $_POST['email'] ?>) vous a laissé le commentaire suivant :</p>
+    <p><?= $_POST['comment'] ?></p>
     <p>note : <?php $_POST['note'] ?> / 5</p>
     <p>(L'utilisateur <?php $verif ?> accepté les conditions génétales)</p>
 </section>

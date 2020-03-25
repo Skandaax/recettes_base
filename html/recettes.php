@@ -158,8 +158,8 @@ include "menu.php"
                 <p>
                 <p> 
                 
-                    <label for="message">Laissez-nous un commentaire</label><br>
-                    <textarea id="message" rows="5" cols="40"></textarea>
+                    <label for="comment">Laissez-nous un commentaire</label><br>
+                    <textarea id="comment" rows="5" cols="40"></textarea>
                 </p>
                 <p><input type="submit" value="Envoyer">
                 </p>
